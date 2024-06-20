@@ -7,7 +7,6 @@ public class CommissionEmployee
     private string socialSecurityNumber;
     private decimal grossSales; // gross weekly sales
     private decimal commissionRate; // commission percentage
-
     public CommissionEmployee(string first, string last, string ssn, decimal sales, decimal rate)
     {
         firstName = first;
@@ -16,7 +15,6 @@ public class CommissionEmployee
         GrossSales = sales;
         CommissionRate = rate;
     }
-
     public string FirstName
     {
         get { return firstName; }
@@ -60,6 +58,7 @@ public class CommissionEmployee
     {
         return commissionRate * grossSales;
     }
+    
 
     public override string ToString()
     {
